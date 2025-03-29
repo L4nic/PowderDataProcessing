@@ -1,0 +1,94 @@
+# Powder Data Processing - Page d'aide
+'by Y. Filinchuk, SNBL, last updated 27 march 2025
+
+Bienvenue dans Powder Data Processing, un outil conçu pour simplifier l'analyse et la transformation de données expérimentales issues de la diffraction des rayons X. Vous trouverez ci-dessous la description de chaque module disponible dans l'application, ainsi que des instructions claires pour leur utilisation.
+
+---
+
+## 1. Add Sigmas
+
+**Objectif :** Ajouter les valeurs sigma (incertitudes statistiques) à vos fichiers expérimentaux individuels.
+
+**Comment l'utiliser :**
+- Sélectionnez le fichier d'entrée (.chi).
+- Sélectionnez ou définissez le fichier de sortie (.dat).
+- Indiquez la distance détecteur-échantillon en mm.
+- Cliquez sur « Run ».
+
+---
+
+## 2. Add Sigmas LEO
+
+**Objectif :** Calculer et ajouter les valeurs sigma spécialement adaptées aux fichiers provenant d'un détecteur LEO.
+
+**Comment l'utiliser :**
+- Sélectionnez le fichier d'entrée.
+- Définissez le fichier de sortie.
+- Indiquez la distance détecteur-échantillon en mm.
+- Cliquez sur « Run ».
+
+---
+
+## 3. Add Sigmas Series
+
+**Objectif :** Traiter automatiquement une série de fichiers (.chi) pour y ajouter les valeurs sigma.
+
+**Comment l'utiliser :**
+- Indiquez le répertoire de travail contenant vos fichiers.
+- Spécifiez la base commune des noms des fichiers.
+- Indiquez la distance détecteur-échantillon en mm.
+- Indiquez le premier et le dernier numéro des fichiers.
+- Cliquez sur « Run ».
+
+---
+
+## 4. Normalize
+
+**Objectif :** Normaliser automatiquement une série de fichiers pour uniformiser leur intensité relative.
+
+**Comment l'utiliser :**
+- Sélectionnez le répertoire des fichiers à normaliser.
+- Spécifiez la base commune des noms de fichiers.
+- Indiquez le premier et le dernier numéro des fichiers.
+- Cliquez sur « Run ».
+
+---
+
+## 5. Scale Series
+
+**Objectif :** Ajuster une série de fichiers pour qu'ils possèdent la même intensité totale dans une plage spécifiée de 2Theta.
+
+**Comment l'utiliser :**
+- Sélectionnez le répertoire contenant les fichiers.
+- Indiquez la base commune des noms des fichiers.
+- Spécifiez le premier et le dernier numéro des fichiers.
+- Définissez la plage de 2Theta (borne inférieure et supérieure).
+- Cliquez sur « Run ».
+
+---
+
+## 6. Seq Scales
+
+**Objectif :** Extraire automatiquement les facteurs d'échelle d'un fichier .seq produit par FullProf.
+
+**Comment l'utiliser :**
+- Sélectionnez le fichier .seq en entrée.
+- Spécifiez le fichier de sortie (.txt).
+- Cliquez sur « Run ».
+
+---
+
+## 7. Shorter Buffer
+
+**Objectif :** Réduire un fichier .buf en ne gardant qu'une ligne sur un nombre spécifié (facteur de réduction).
+
+**Comment l'utiliser :**
+- Sélectionnez le fichier buffer à raccourcir.
+- Indiquez le facteur de réduction souhaité.
+- Cliquez sur « Run ».
+
+---
+
+En cas de problème ou pour toute question supplémentaire, n'hésitez pas à contacter le(s) développeur(s)  yaroslav.filinchuk@uclouvain.be loic.rochez@uclouvain.be.
+
+
