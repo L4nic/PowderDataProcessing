@@ -1,27 +1,27 @@
 # PowderDataProcessing
 
 **Version 2.0**  
-Une application Qt pour le traitement automatisé de données issues de la diffraction des rayons X.
+A Qt-based application for the automated processing of data from Fit2D.
 
-Développé par Y. Filinchuk & Loïc Rochez – UCLouvain
+Developed by Y. Filinchuk & Updated by Loïc Rochez – UCLouvain
 
 ---
 
 ## 🧪 Description
 
-**PowderDataProcessing** est un outil graphique intuitif permettant d'analyser et transformer efficacement des fichiers expérimentaux liés à la diffraction des rayons X.  
-Les modules disponibles couvrent différentes tâches : ajout d'incertitudes statistiques (sigmas), normalisation, mise à l'échelle, et extraction de facteurs depuis des fichiers `.seq`.
+**PowderDataProcessing** is an intuitive graphical tool designed to efficiently analyze and transform experimental data related to X-ray powder diffraction.  
+The available modules cover various tasks such as adding statistical uncertainties (sigmas), normalizing intensities, scaling data, and extracting scale factors from `.seq` files.
 
 ---
 
-## 🖥️ Interface & Fonctionnalités
+## 🖥️ Interface & Features
 
-L'application se compose d'une interface graphique simple permettant de :
-- Sélectionner les fichiers d'entrée/sortie,
-- Saisir les paramètres nécessaires (distance détecteur-échantillon, plages de 2Theta, etc.),
-- Lancer le traitement en un clic.
+The application provides a simple graphical interface that allows you to:
+- Select input/output files,
+- Enter required parameters (e.g. detector-sample distance, 2Theta ranges, etc.),
+- Start the processing with a single click.
 
-### Modules disponibles :
+### Available modules:
 - **Add Sigmas**
 - **Add Sigmas LEO**
 - **Add Sigmas Series**
@@ -30,22 +30,47 @@ L'application se compose d'une interface graphique simple permettant de :
 - **Seq Scales**
 - **Shorter Buffer**
 
-👉 Pour une explication détaillée de chaque module, consultez le fichier [`help.txt`](./help.txt).
+👉 For a detailed explanation of each module, see the [`help.txt`](./help.txt) file.
 
 ---
 
-## ⚙️ Compilation
+## Installation
 
-Ce projet utilise **CMake** et **Qt6**.
+### 🪟 Windows
 
-### 🔧 Prérequis :
-- Qt6 (Widgets)
+A precompiled executable is already included in the repository.  
+Simply double-click on `PowderDataProcessing.exe` to launch the application.
+
+---
+
+### 🍏 macOS & 🐧 Linux
+
+#### 🔧 Requirements:
+- Qt6 (install via Homebrew or from the official site)
 - CMake >= 3.5
-- Un compilateur C++ compatible C++17
+- Xcode or any C++17-compatible compiler
 
-### 💡 Exemple de compilation sous Linux :
+#### 💡 Install Qt6 via Homebrew (macOS) or apt (Linux):
+```bash
+brew install qt
+```
+
+```bash
+sudo apt install qt6-base-dev qt6-tools-dev qt6-tools-dev-tools cmake build-essential
+```
+## ⚙️ Compilation
+### 🍏 macOS
+```bash
+mkdir build
+cd build
+cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt)
+make
+```
+
+### 🐧 Linux
 ```bash
 mkdir build
 cd build
 cmake ..
 make
+```
